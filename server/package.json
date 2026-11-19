@@ -1,0 +1,19 @@
+{
+  "name": "coy-discover-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --experimental-sqlite --no-warnings src/index.js",
+    "dev": "node --experimental-sqlite --no-warnings --watch src/index.js",
+    "seed": "node --experimental-sqlite --no-warnings src/db/seed.js",
+    "test": "node --experimental-sqlite --test --no-warnings \"tests/*.test.js\""
+  },
+  "dependencies": {
+    "coy-discover": "file:..",
+    "express": "^4.21.2"
+  }
+}

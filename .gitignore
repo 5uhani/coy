@@ -1,0 +1,18 @@
+node_modules/
+dist/
+build/
+# local database (recreated and seeded automatically on first start)
+server/data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+# secrets and env
+.env
+.env.*
+!.env.example
+# logs / OS / editor
+*.log
+.DS_Store
+.vscode/
+.idea/
